@@ -16,6 +16,9 @@ dependencies = [
 [project.urls]
 Repository = "https://github.com/soda92/jedi-language-server"
 
+[project.scripts]
+soda-jedi-ls = 'soda-jedi-ls.cli:cli'
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -39,15 +42,6 @@ enable_error_code = "ignore-without-code,redundant-expr,truthy-bool"
 module = "jedi.*"
 ignore_missing_imports = true
 
-[tool.poetry.dependencies]
-python = "^3.9"
-jedi = "^0.19.2"
-pygls = "^1.1.0"
-cattrs = ">=23.1.2"
-docstring-to-markdown = "0.*"
-lsprotocol = ">=2023.0.1"
-typing-extensions = { version = "^4.5.0", python = "<3.10" }
-
 [tool.poetry.group.dev.dependencies]
 PyHamcrest = "*"
 mypy = "*"
@@ -57,9 +51,6 @@ pytest = "*"
 pytest-cov = "*"
 python-lsp-jsonrpc = "*"
 ruff = "*"
-
-[project.scripts]
-soda-jedi-ls = 'soda-jedi-ls.cli:cli'
 
 [tool.ruff]
 line-length = 79
