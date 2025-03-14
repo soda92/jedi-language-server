@@ -12,13 +12,12 @@ module = "jedi.*"
 ignore_missing_imports = true
 
 [tool.poetry]
-name = "jedi-language-server"
-version = "0.43.1"
-description = "A language server for Jedi!"
-authors = ["Sam Roeca <samuel.roeca@gmail.com>"]
-readme = "README.md"
-homepage = "https://github.com/pappasam/jedi-language-server"
-repository = "https://github.com/pappasam/jedi-language-server"
+name = "soda-jedi-ls"
+version = "2025.3.14.0"
+description = "custom fork of jedi-language-server"
+readme = "README-fork.md"
+repository = "https://github.com/soda92/jedi-language-server"
+
 keywords = [
   "python",
   "completion",
@@ -41,7 +40,7 @@ classifiers = [
   "Topic :: Utilities",
   "Typing :: Typed",
 ]
-license = "MIT"
+license = "Apache-2.0"
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -63,11 +62,7 @@ python-lsp-jsonrpc = "*"
 ruff = "*"
 
 [tool.poetry.scripts]
-jedi-language-server = 'jedi_language_server.cli:cli'
-
-[tool.poetry.urls]
-Changelog = "https://github.com/pappasam/jedi-language-server/blob/main/CHANGELOG.md"
-Issues = "https://github.com/pappasam/jedi-language-server/issues"
+soda-jedi-ls = 'soda-jedi-ls.cli:cli'
 
 [tool.ruff]
 line-length = 79
