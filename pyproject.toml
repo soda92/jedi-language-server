@@ -1,6 +1,6 @@
 [project]
 name = "soda-jedi-ls"
-version = "2025.3.14.0"
+version = "2025.3.14.1"
 description = "custom fork of jedi-language-server"
 readme = "README-fork.md"
 
@@ -25,12 +25,12 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.sdist]
 ignore-vcs = true
-packages = ["soda-jedi-ls"]
+packages = ["soda_jedi_ls"]
 exclude = ["__pycache__", "*.pyc", "*.exe", "*.exe~", "*.syso"]
 
 [tool.hatch.build.targets.wheel]
 ignore-vcs = true
-packages = ["soda-jedi-ls"]
+packages = ["soda_jedi_ls"]
 exclude = ["__pycache__", "*.pyc", "*.exe~", "*.syso"]
 
 [tool.mypy]

@@ -91,7 +91,7 @@ wheels = [
 
 [[package]]
 name = "soda-jedi-ls"
-version = "2025.3.14.0"
+version = "2025.3.14.1"
 source = { editable = "." }
 dependencies = [
     { name = "cattrs" },
