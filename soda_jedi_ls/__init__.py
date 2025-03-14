@@ -2,4 +2,4 @@
 
 from importlib.metadata import version
 
-__version__ = version("jedi-language-server")
+__version__ = version("soda-jedi-ls")

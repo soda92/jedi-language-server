@@ -16,18 +16,17 @@ def get_version() -> str:
 def cli() -> None:
     """Jedi language server cli entrypoint."""
     parser = argparse.ArgumentParser(
-        prog="jedi-language-server",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        description="Jedi language server: an LSP wrapper for jedi.",
+        description="soda-jedi-ls: another LSP wrapper for jedi.",
         epilog="""\
 Examples:
 
-    Run over stdio     : jedi-language-server
-    Run over tcp       : jedi-language-server --tcp
+    Run over stdio     : soda-jedi-ls
+    Run over tcp       : soda-jedi-ls --tcp
     Run over websockets:
         # only need to pip install once per env
         pip install pygls[ws]
-        jedi-language-server --ws
+        soda-jedi-ls --ws
 
 Notes:
 

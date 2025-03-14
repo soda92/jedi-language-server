@@ -17,7 +17,7 @@ dependencies = [
 Repository = "https://github.com/soda92/jedi-language-server"
 
 [project.scripts]
-soda-jedi-ls = 'soda-jedi-ls.cli:cli'
+soda-jedi-ls = 'soda_jedi_ls.cli:cli'
 
 [build-system]
 requires = ["hatchling"]

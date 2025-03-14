@@ -1,6 +1,6 @@
 """Test the CLI."""
 
-from jedi_language_server.cli import cli, get_version
+from soda_jedi_ls.cli import cli, get_version
 
 
 def test_get_version() -> None:

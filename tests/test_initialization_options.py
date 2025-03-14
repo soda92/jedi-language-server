@@ -4,7 +4,7 @@ import re
 
 from hamcrest import assert_that, is_
 
-from jedi_language_server.initialization_options import (
+from soda_jedi_ls.initialization_options import (
     InitializationOptions,
     initialization_options_converter,
 )
