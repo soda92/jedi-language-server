@@ -666,7 +666,7 @@ def hover_text(
     full_name = name.full_name
     description = name.description
     docstring = name.docstring(raw=True)
-    header_plain = "\n".join(get_full_signatures(name))
+    header_plain = f"({name.type})" + "\n".join(get_full_signatures(name))
     header = _md_python(header_plain, markup_kind)
     result: List[str] = []
     result.append(header)
@@ -684,8 +684,8 @@ def hover_text(
             result.append("---")
         result.append(
             _md_bold("Full name:", markup_kind)
-            + " "
-            + _md_text_sl(full_name, markup_kind)
+            # + " "
+            # + _md_text_sl(full_name, markup_kind)
         )
     return "\n".join(result).strip()
 
