@@ -1,6 +1,6 @@
 [project]
 name = "soda-jedi-ls"
-version = "2025.3.14.1"
+version = "2025.3.14.2"
 description = "custom fork of jedi-language-server"
 readme = "README-fork.md"
 
